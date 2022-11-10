@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>lesson_14</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container"></div>
+		</header>
+		<main class="main">
+			<div class="main__container">
+				<div class="flex">
+					<div class="flex__container">
+						<div class="main__title">display:flex;</div>
+						<div class="flex__display-block">
+							<div class="flex__item">F</div>
+							<div class="flex__item">l</div>
+							<div class="flex__item">e</div>
+							<div class="flex__item">x</div>
+						</div>
+						<div class="main__title">display:inline-flex;</div>
+						<div class="flex__inline-flex">
+							<div class="flex__item">F</div>
+							<div class="flex__item">l</div>
+							<div class="flex__item">e</div>
+							<div class="flex__item">x</div>
+						</div>
+						<div class="main__title">justify-content: flex-start;</div>
+						<div class="flex__justify-content-start">
+							<div class="flex__item">F</div>
+							<div class="flex__item">l</div>
+							<div class="flex__item">e</div>
+							<div class="flex__item">x</div>
+						</div>
+						<div class="main__title">justify-content: flex-end;</div>
+						<div class="flex__justify-content-end">
+							<div class="flex__item">F</div>
+							<div class="flex__item">l</div>
+							<div class="flex__item">e</div>
+							<div class="flex__item">x</div>
+						</div>
+						<div class="main__title">justify-content: center;</div>
+						<div class="flex__justify-content-center">
+							<div class="flex__item">F</div>
+							<div class="flex__item">l</div>
+							<div class="flex__item">e</div>
+							<div class="flex__item">x</div>
+						</div>
+						<div class="main__title">justify-content: space-between;</div>
+						<div class="flex__justify-content-between">
+							<div class="flex__item">F</div>
+							<div class="flex__item">l</div>
+							<div class="flex__item">e</div>
+							<div class="flex__item flex__item--size">x. Застосувала flex-wrap: wrap;, щоб перевірити, як працює
+							</div>
+						</div>
+						<div class="main__title">justify-content: space-around;</div>
+						<div class="flex__justify-content-around">
+							<div class="flex__item">F</div>
+							<div class="flex__item flex__item--size">l. Застосувала flex-wrap: wrap-reverse;, щоб перевірити,
+								як
+								працює</div>
+							<div class="flex__item">e</div>
+							<div class="flex__item">x</div>
+						</div>
+						<div class="main__title">justify-content: space-evenly;</div>
+						<div class="flex__justify-content-evenly">
+							<div class="flex__item">F</div>
+							<div class="flex__item">l</div>
+							<div class="flex__item">e</div>
+							<div class="flex__item">x</div>
+						</div>
+						<div class="main__title">align-items; flex-start;</div>
+						<div class="flex__align-start">
+							<div class="flex__column">
+								<div class="flex__item flex__item--size">F. “Логіка може привести вас. від пункту “А” до пункту
+									“Б”, а
+									уява – куди завгодно”, – Альберт Айнштайн.</div>
+							</div>
+							<div class="flex__column">
+								<div class="flex__item flex__item--size">l. “80% успіху — це з’явитися в потрібному місці в
+									потрібний
+									час.”, – Вуді Аллен.</div>
+							</div>
+							<div class="flex__column">
+								<div class="flex__item flex__item--size">e. “Наука – це організовані знання, мудрість – це
+									організоване
+									життя.”, – Іммануїл Кант.</div>
+							</div>
+							<div class="flex__column">
+								<div class="flex__item flex__item--size">x. “Найкраща помста – величезний успіх”, – Френк
+									Сінатра.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__title">Приклад з картками</div>
+				<div class="shop">
+					<div class="shop__colummn">
+						<div class="shop__card item">
+							<div class="item__image">
+								<img style="height: 150px;" src="img/animals.jpg" alt="Костюм для хлопчиків">
+							</div>
+							<div class="item__text">
+								<p>Комплект «Звірята» для хлопчиків від 6 місяців до 2 років</p>
+								<p class="item__text item-text--font-weight"><span>Ціна:</span> 250 грн</p>
+							</div>
+							<a href="https://www.instagram.com/happy_kids_shop.mk/" target="_blank" class="item__button">Купити</a>
+						</div>
+					</div>
+
+					<div class="shop__colummn">
+						<div class="shop__card item">
+							<div class="item__image">
+								<img style="height: 150px;" src="img/car.jpg" alt="Костюм для хлопчиків">
+							</div>
+							<div class="item__text">
+								<p>Комплект для хлопчиків від 6 до 18 місяців</p>
+								<p class="item__text item-text--font-weight"><span>Ціна:</span> 350 грн</p>
+							</div>
+							<a href="https://www.instagram.com/happy_kids_shop.mk/" target="_blank" class="item__button">Купити</a>
+						</div>
+					</div>
+
+					<div class="shop__colummn">
+						<div class="shop__card item">
+							<div class="item__image">
+								<img style="height: 150px;" src="img/baby.jpg" alt="Костюм для дівчинки">
+							</div>
+							<div class="item__text">
+								<p>Комплект «Baby» для дівчинки від 6 місяців до 2 років </p>
+								<p>При виборі розміру орієнтуйтеся по вимірам</p>
+								<p class="item__text item-text--font-weight"><span>Ціна:</span> 260 грн</p>
+							</div>
+							<a href="https://www.instagram.com/happy_kids_shop.mk/" target="_blank" class="item__button">Купити</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container"></div>
+		</footer>
+	</div>
+</body>
+
+</html>

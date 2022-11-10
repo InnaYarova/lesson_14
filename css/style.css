@@ -1,0 +1,194 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');*/
+/*Обнулення (reset)*/
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a {
+	color: inherit;
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+img{
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+html,
+body{
+	height: 100%;
+}
+/*Стилізація*/
+
+/*Стандартна*/
+[class*="__container"]{
+	max-width: 700px;
+	margin: 0 auto;
+}
+.wrapper{
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+}
+.main__container>div{
+	margin-bottom: 10px;
+}
+.main__title{
+	font-size: 25px;
+	font-weight: 900;
+	color: rgb(8, 8, 131);
+	text-align: center;
+	text-shadow: 3px 3px 3px grey;
+}
+/*NEW*/
+.flex__container>div:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.flex__display-block{
+background-color: blueviolet;
+display: flex;
+}
+.flex__item{
+	border: 2px solid blue;
+	background-color: aqua;
+	font-size: 30px;
+	color: red;
+	font-weight: 700;
+}
+.flex__item--size{
+	font-size: 15px;
+}
+.flex__inline-flex{
+display: inline-flex;
+}
+.flex__justify-content-start {
+	background-color: greenyellow;
+	display: flex;
+	justify-content: flex-start;
+}
+.flex__justify-content-end {
+	background-color: rgb(231, 108, 15);
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+}
+.flex__justify-content-center{
+	background-color: rgb(227, 198, 7);
+	display: flex;
+	justify-content: center;
+}
+.flex__justify-content-between{
+	background-color: rgb(47, 238, 255);
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.flex__justify-content-around{
+	background-color: rgb(255, 47, 248);
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap-reverse;
+}
+.flex__justify-content-evenly {
+	background-color: rgb(254, 24, 8);
+	display: flex;
+	justify-content: space-evenly;
+}
+.flex__align-start{
+	/*background-color: rgb(13, 5, 119);*/
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	row-gap: 15px;
+	margin: 0px -8px;
+}
+.flex__column{
+	flex: 0 1 25%;
+	padding: 0px 8px;
+}
+
+
+/*	КАРТКА*/
+.shop{
+display: flex;
+justify-content: space-evenly;
+margin: 0 -8px;
+flex-wrap: wrap;
+}
+
+.shop__colummn{
+flex: 1 1 33.333%;
+padding: 0px 8px;
+margin-bottom: 10px;
+}
+.shop__card{
+padding: 15px;
+min-height: 100%;
+background-color: rgb(146, 211, 211);
+border: 3px solid grey;
+border-radius: 10px;
+box-shadow: 1px 2px 10px grey;
+}
+.item{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap:wrap;
+}
+.item__image img{
+border-radius: 10px;
+max-width: 100%;
+}
+.item__text{
+font-size:14px;
+flex-grow: 1;
+color: blue;
+font-style: italic;
+}
+
+.item-text--font-weight{
+	font-weight: 700;
+}
+.item-text--font-weight span{
+	color: red;
+}
+.item__button{
+background-color: blue;
+border-radius: 10px;
+padding: 5px;
+color: white;
+}
